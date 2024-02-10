@@ -20,6 +20,6 @@ Only use with Home Assistant 2023.12 or newer.
 6. After download restart Home Assistant.
 7. If you are not yet using the Enphase Envoy integration, add the integration through the home assistant configuration flow and the [Enphase Envoy integration](https://www.home-assistant.io/integrations/enphase_envoy#envoy-authentication-requirements)
 
-If you decide to install this manually without the use of HACS, then make sure to only place the files in custom_components/enphase_envoy_custom from this repository into the folder /config/custom_components/enphase_envoy on your Home Assistant system.
+If you decide to install this manually without the use of HACS, then make sure to only place the files in custom_components/enphase_envoy from this repository into the folder /config/custom_components/enphase_envoy on your Home Assistant system.
 
 As this custom integration is using the HA core enphase envoy integration, it is compatible with that. If you used an other custom integration before, compatibility may differ and entities may restart their history from scratch again with different names, may not exist anymore and new ones may show up, or all may work just fine.
