@@ -1,6 +1,6 @@
 {
   "domain": "enphase_envoy",
-  "name": "Enphase Envoy (with Legacy HTML extension)",
+  "name": "Enphase Envoy (+Legacy HTML)",
   "codeowners": ["@catsmanac"],
   "config_flow": true,
   "documentation": "https://www.home-assistant.io/integrations/enphase_envoy",
