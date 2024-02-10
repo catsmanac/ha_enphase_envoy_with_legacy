@@ -1,0 +1,11 @@
+{
+  "domain": "enphase_envoy_legacy_support",
+  "name": "Enphase Envoy legacy support",
+  "codeowners": ["@catsmanac"],
+  "config_flow": false,
+  "documentation": "https://www.home-assistant.io/integrations/enphase_envoy_legacy_support",
+  "integration_type": "hub",
+  "iot_class": "local_polling",
+  "loggers": ["pyenphase"],
+  "version": "0.0.1b1"
+}
