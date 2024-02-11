@@ -5,6 +5,7 @@
   "config_flow": true,
   "documentation": "https://github.com/catsmanac/ha_enphase_envoy_with_legacy#enphase-envoy-html-extension",
   "integration_type": "service",
+  "iot_class": "local_polling",
   "loggers": ["pyenphase"],
   "version": "0.0.2a1"
 }
