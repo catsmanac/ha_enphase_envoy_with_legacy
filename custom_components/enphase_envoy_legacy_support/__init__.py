@@ -14,8 +14,13 @@ from pyenphase.updaters.base import EnvoyUpdater
 
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
+from homeassistant.helpers import config_validation as cv
 
+from .const import DOMAIN
 from .legacy_updater import LegacyProductionScraper
+
+# Use empty_config_schema because the component does not have any config options
+CONFIG_SCHEMA = cv.empty_config_schema(DOMAIN)
 
 _LOGGER = logging.getLogger(__name__)
 
