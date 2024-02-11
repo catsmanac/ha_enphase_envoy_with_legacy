@@ -1,8 +1,8 @@
-"""Updater for Enphase Envoy solar energy monitor with support for legacy.
+"""HTML Scraper Updater for Pyenphase / Enphase Envoy solar energy monitor.
 
-This custom integration uses the Enphase Envoy core integration and registers
-an additional updater that reads production data from legacy envoy html pages.
-Code here is the updater that reads production data from the legacy html pages.
+This custom integration registers an HTML updater with Pyenphase module used
+by the HA Core Enphase Envoy integration. When registered, the HA Enphase Envoy
+can collect data from legacy Envoy devices with firmware < 3.9 as well.
 """
 from __future__ import annotations
 
