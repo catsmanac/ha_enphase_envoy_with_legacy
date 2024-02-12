@@ -47,7 +47,8 @@ The newly added custom integrations shows in the integrations dashboard
 ![picture of configured custom integration in integrations dashboard](docs/Added_Enphase_Legacy_Integration.PNG "configured custom integration in integrations dashboard")
 
 In the integration details it shows as a service. The `add service` button will not add any more services. Only 1 can be added and is sufficient.
-Integration detailsOptional title](docs/Added_Enphase_Legacy_Integration_Service.PNG "Integration details")
+
+![picture of Integration details](docs/Added_Enphase_Legacy_Integration_Service.PNG "Integration details")
 
 ## Legacy Envoy data
 
