@@ -16,7 +16,7 @@ _LOGGER = logging.getLogger(__name__)
 
 
 class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
-    """Enphase Envoy lagacy support config flow."""
+    """Enphase Envoy legacy support config flow."""
 
     VERSION = 1
 
@@ -24,8 +24,8 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
         if not self.unique_id:
             await self.async_set_unique_id(UNIQUE_ID)
         if self.unique_id:
-            self._abort_if_unique_id_configured()
+            self._abort_if_unique_id_configured(error="single_instance_allowed")
         return self.async_create_entry(
-            title=NAME, 
+            title=NAME,
             data={CONF_UPDATER: LegacyProductionScraper.__name__}
         )
