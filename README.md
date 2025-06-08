@@ -8,7 +8,15 @@ This custom integration is NOT a replacement for the HA Enphase Envoy integratio
 
 You should only deploy this custom integration when running an Enphase Envoy legacy model with firmware before 3.9, either stand-alone or in a mixed environment with newer models. The registered updater is only used for communication to the legacy Envoy, not for communication to the newer models.
 
-Only use with Home Assistant 2023.12 or newer.
+## Releases
+
+### 1.x.x
+
+As of Home Assistant version 2025.? the Enphase Envoy integration switched from using httpx library to using the aiohttp library. Which is a breaking change for this custom integration. Starting with Home Assistant 2025.? you must update to 1.0.0 or newer version.
+
+### 0.1.x
+
+First production versions. Only use with Home Assistant versions from 2023.12 to 2025.?-1.x.
 
 ## Installation
 
