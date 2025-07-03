@@ -61,7 +61,7 @@ class LegacyProductionScraper(EnvoyUpdater):
             return None
         try:
             response = await self._probe_request(URL_PRODUCTION)
-            data = response.text
+            data = await response.text()
         except ENDPOINT_PROBE_EXCEPTIONS:
             return None
         # text should contain some key words to validate
@@ -74,7 +74,7 @@ class LegacyProductionScraper(EnvoyUpdater):
     async def update(self, envoy_data: EnvoyData) -> None:
         """Provide the Envoy Production data from the legacy HTML Page."""
         response = await self._request(URL_PRODUCTION)
-        production_data = response.text
+        production_data = await response.text()
         envoy_data.raw[URL_PRODUCTION] = production_data
         envoy_data.system_production = (
             LegacyEnvoySystemProduction.from_production_legacy(production_data)
