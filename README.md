@@ -12,7 +12,7 @@ You should only deploy this custom integration when running an Enphase Envoy leg
 
 ### 1.x.x
 
-As of Home Assistant version 2025.? the Enphase Envoy integration switched from using httpx library to using the aiohttp library. Which is a breaking change for this custom integration. Starting with Home Assistant 2025.? you must update to 1.0.0 or newer version.
+As of Home Assistant version 2025.7, the Enphase Envoy integration switched from using httpx library to using the aiohttp library. This is a breaking change for this custom integration. Starting with Home Assistant 2025.7 you must update this custom integration to 1.0.0 or newer.
 
 ### 0.1.x
 
